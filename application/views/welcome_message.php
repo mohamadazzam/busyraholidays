@@ -88,19 +88,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div id="carouselExampleIndicators" class="carousel slide caption-animate carousel-big" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<?php $i=true;foreach ($slider as $img => $k):?>
-				<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $k['id'];?>" class="<?php echo $i ? ' active' : ''?>"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $k['id'];?>" class="<?php echo $i ? ' active' : ''?>"></li>
 			<?php $i=false;endforeach;?>
 		</ol>
 
 		<div class="carousel-inner">
 			<?php $i=true;foreach ($slider as $img => $r):?>
-				<div class="carousel-item <?php echo $i ? ' active' : ''?>">
-					<img class="d-block w-100" src="<?php echo $r['path']; ?>" alt="<?php echo $r['title']; ?>">
-					<div class="carousel-caption">
-						<h3 data-animation="animated flipInX"><?php echo $r['title']; ?></h3>
-						<p data-animation="animated bounceInUp"><?php echo $r['caption']; ?></p>
-					</div>
+			<div class="carousel-item <?php echo $i ? ' active' : ''?>">
+				<img class="d-block w-100" src="<?php echo $r['path']; ?>" alt="<?php echo $r['title']; ?>">
+				<div class="carousel-caption">
+					<h3 data-animation="animated flipInX"><?php echo $r['title']; ?></h3>
+					<p data-animation="animated bounceInUp"><?php echo $r['caption']; ?></p>
+					<?php if(!empty($r['href'])):?>
+						<a href="<?php echo $r['href']; ?>" class="btn btn-custom animated slideInLeft">Maklumat Lanjut <i class="fa fa-fw fa-angle-right"></i></a>
+					<?php endif; ?>
 				</div>
+			</div>
 			<?php $i=false;endforeach; ?>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
