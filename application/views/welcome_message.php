@@ -118,83 +118,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="separator" id="main">
 	</div>
 	<div class="container wrapper-main">
-		<h1 class="header">Promosi Umrah 2018 
-			<span class="ng-tns-c0-0" style="color:#38618C">
-				<i class="fa fa-caret-right"></i> Penerbangan
-				<b class="text-uppercase">Terus</b>
-			</span>
-			<a class="btn btn-link btn-link-custom pull-right" href="pakej/umrah">Lihat Pakej<i class="fa fa-fw fa-caret-right"></i></a>
-		</h1>
+		<?php if($pCategory <= 6):?>
+			<h1 class="header">Promosi Umrah 2018 
+				<span class="ng-tns-c0-0" style="color:#38618C">
+					<i class="fa fa-caret-right"></i> Penerbangan
+					<b class="text-uppercase">Terus</b>
+				</span>
+				<a class="btn btn-link btn-link-custom pull-right" href="pakej/umrah">Lihat Pakej<i class="fa fa-fw fa-caret-right"></i></a>
+			</h1>
+			<div class="row">
+				<?php 
+				foreach ($pCategory as $cat => $c):
+					echo '
+					<div class="col-lg-4 col-sm-12 col-xs-12">
+					<a href="pakej/'.$c['categoryName'].'/'.urlencode($c['categoryId']).'">
+					<div class="card mb-4 box-shadow featured-post">
+					<img class="card-img-top" data-src="assets/images/upload/packages/omra/omra.jpg" src="assets/images/upload/packages/omra/omra.jpg" data-holder-rendered="true">
+					</div>
+					</a>
+					</div>
+					';
+				endforeach; ?>
+			</div>
+		<?php endif;?>
+		<div class="highlight">
+			<span class="title">Pakej Promosi Umrah <b><?php echo date('Y');?></b></span>
+		</div>
 		<div class="row">
 			<?php for($x = 1; $x <= 6; $x++):?>
-				<div class="col-lg-4 col-sm-12 col-xs-12">
-					<a href="pakej/umrah/<?php echo $x;?>">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<a href="pakej/haha/hihi">
 						<div class="card mb-4 box-shadow featured-post">
 							<img class="card-img-top" data-src="assets/images/upload/packages/omra/omra.jpg" src="assets/images/upload/packages/omra/omra.jpg" data-holder-rendered="true">
 						</div>
 					</a>
 				</div>
 			<?php endfor;?>
-			<div class="col-xs-12 col-sm-6 col-md-9">
-				<p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore
-					PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg
-				sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
-					Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-				</p>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
-					Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-				</p>
-			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-6 col-sm-4">
-				<div class="card card-outline-primary">
-					<div class="card-block">
-						<h3 class="card-title">Card</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-secondary">Outline</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-sm-4">
-				<div class="card card-outline-primary">
-					<div class="card-block">
-						<h3 class="card-title">Card</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-secondary">Outline</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-sm-4">
-				<div class="card card-outline-primary">
-					<div class="card-block">
-						<h3 class="card-title">Card</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-secondary">Outline</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END HERE -->
-	<div id="container">
-		
-		<!-- <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php //echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p> -->
-	</div>
+		<!-- END HERE -->
+		<div id="container">
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="assets/static/css/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/static/js/main.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="assets/static/css/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/static/js/main.js"></script>
-</body>
-</html>
+			<!-- <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php //echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p> -->
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/static/css/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/static/js/main.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/static/css/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/static/js/main.js"></script>
+	</body>
+	</html>
