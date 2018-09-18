@@ -60,23 +60,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				<ul class="nav navbar-nav ml-auto">
 					<li class="nav-item nav-list">
-						<a class="nav-link" href="#">Umrah</a>
+						<a class="nav-link" href="pakej/umrah">Umrah</a>
 						<span class="Header---shadow---anTEB"></span>
 					</li>
 					<li class="nav-item nav-list">
-						<a class="nav-link" href="#">Pelancongan</a>
+						<a class="nav-link" href="pakej/pelancongan">Pelancongan</a>
 						<span class="Header---shadow---anTEB"></span>
 					</li>
 					<li class="nav-item nav-list">
-						<a class="nav-link" href="#">Promosi</a>
+						<a class="nav-link" href="pakej/promosi">Promosi</a>
 						<span class="Header---shadow---anTEB"></span>
 					</li>
 					<li class="nav-item nav-list">
-						<a class="nav-link" href="#">Mengenai Kami</a>
+						<a class="nav-link" href="mengenai-kami">Mengenai Kami</a>
 						<span class="Header---shadow---anTEB"></span>
 					</li>
 					<li class="nav-item nav-list">
-						<a class="nav-link" href="#">Hubungi Kami</a>
+						<a class="nav-link" href="hubungi-kami">Hubungi Kami</a>
 						<span class="Header---shadow---anTEB"></span>
 					</li>
 				</ul>
