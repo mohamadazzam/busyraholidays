@@ -1,4 +1,4 @@
 install: true
-script: bundle exec thor build
+#script: bundle exec thor build
 deploy:
   skip_cleanup: true
