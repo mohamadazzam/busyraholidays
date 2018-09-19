@@ -1,3 +1,5 @@
+before_install:
+- rvm install 2.1.5
 install: true
 #script: bundle exec thor build
 deploy:
