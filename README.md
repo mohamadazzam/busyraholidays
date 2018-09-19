@@ -6,7 +6,7 @@ A Web Portal using CodeIgniter v3.1.9
 - Uses [**Font-Awesome**] as main icon theme
 
 ## Preview Page
-Page can be view as [**Develepment**] from this link (https://dev.tripixel.my/busyra)
+Page can be view as [**Develepment**] from this link [**preview**](https://dev.tripixel.my/busyra)
 
 ## Copyright and License
 Code and documentation copyright [Tripixel Studios](http://tripixel.my/). Code released under the MIT license. Docs released under Creative Commons.
