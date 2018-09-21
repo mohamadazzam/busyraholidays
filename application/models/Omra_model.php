@@ -16,5 +16,14 @@ class Omra_model extends CI_Model
 		$query = $this->db->get();
 		return $query->result_array();
 	}
+
+	function getPromotion($ownerId)
+	{
+		$this->db->select("*"); 
+		$this->db->from('tbl_package_omra');
+		$this->db->where('workgroup',$ownerId);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 	
 }

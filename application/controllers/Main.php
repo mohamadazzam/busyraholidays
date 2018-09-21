@@ -22,9 +22,9 @@ class Main extends CI_Controller {
 					redirect('downtime', 'refresh');
 					die();
 				} else {
-					$getCategory = $this->omra_model->getPackageCategory('1');
-					$data['pCategory'] = $getCategory;
-					$data['slider'] = $this->gallery_model->getSlider();
+					$data['pCategory'] 	= $this->omra_model->getPackageCategory('1');
+					$data['pOmra']		= $this->omra_model->getPromotion('1');
+					$data['slider'] 	= $this->gallery_model->getSlider();
 					$this->load->view('welcome_message', $data);
 				}
 			} catch (Exception $e){

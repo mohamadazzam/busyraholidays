@@ -94,6 +94,9 @@ html,body{
 .text-muted {
   color: #777777;
 }
+.text-capitalize{
+  text-transform: capitalize !important;
+}
 .text-primary {
   color: #ffffff;
 }
@@ -331,6 +334,26 @@ input:focus,button:focus{
   width: 100% !important;
   margin:0 !important;
 }
+.footer-bg-blue{
+  background-image: linear-gradient(160deg, rgb(235, 0, 87) 0%, rgb(198, 0, 234) 82%) !important;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 4px 4px -4px #000;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  border-top: .05rem solid #e5e5e5;
+}
+.footer-bg-default{
+  background: #38618C;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 4px 4px -4px #000;
+  padding: 1.5rem 0;
+  color: #999;
+  text-align: center;
+  border-top: .05rem solid #e5e5e5;
+}
 .featured-post {
   max-width: 100%;
   -moz-transition: all 0.3s;
@@ -431,4 +454,76 @@ h1 {
   font-size: 1.2rem;
   font-weight: 500;
   color: yellow;
+}
+.footer{
+  margin: 0 auto;
+  max-width: 1250px;
+  font-size: 1.3rem;
+  color: #FFF;
+}
+.padding-footer{
+  margin: 0 auto;
+  max-width: 1250px;
+  font-size: 0.75em;
+  color: #FFF;
+}
+.info{
+  display: block;
+  text-transform: capitalize !important;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.link-visit{
+  text-transform: lowercase;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.link-visit a{
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 400;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+.link-whatsapp{
+  color: rgb(37, 211, 102);
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+.link-visit a:hover, .link-whatsapp:hover{
+  animation: all .3s ease-in;
+  color: #cd222a;
+  text-decoration: none;
+}
+.copyright{
+  font-size: 1em;
+  color: #FFF;
+  margin-top: 15px;
+}
+.display-block{
+  display: block !important;
+}
+.partner-1{
+  background: url(../../images/upload/airlines/saudi.png) center center/160px 40px no-repeat;
+  height: 100px;
+  width: 177px;
+  float: none!important;
+  /*-webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);*/
+}
+.tab-12-footer ul li{
+  padding: 2px 0;
+}
+.special-block {
+  padding: 20px 0;
+  color: #fff;
+}
+
+.special-block .special-text {
+  text-align: center;
+  font-size: 1.3rem !important;
 }
