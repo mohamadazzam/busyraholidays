@@ -23,7 +23,7 @@ class Main extends CI_Controller {
 					die();
 				} else {
 					$data['pCategory'] 	= $this->omra_model->getPackageCategory('1');
-					$data['pOmra']		= $this->omra_model->getPromotion('1');
+					$data['pOmra']		= $this->omra_model->getPromotion('1',date('Y'));
 					$data['slider'] 	= $this->gallery_model->getSlider();
 					$this->load->view('welcome_message', $data);
 				}

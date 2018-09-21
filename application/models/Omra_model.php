@@ -17,10 +17,11 @@ class Omra_model extends CI_Model
 		return $query->result_array();
 	}
 
-	function getPromotion($ownerId)
+	function getPromotion($ownerId, $year)
 	{
 		$this->db->select("*"); 
 		$this->db->from('tbl_package_omra');
+		$this->db->where('year(pOmraDepart)', $year);
 		$this->db->where('workgroup',$ownerId);
 		$query = $this->db->get();
 		return $query->result_array();

@@ -63,6 +63,7 @@ body {
   /*background-image: url('/static/icons/m2u_logo_white.png');*/
   background-repeat: no-repeat;
   background-position: 30px 27px;
+  background: url('../../../assets/images/resources/patternbg.png') #E9E9E9 !important;
 }
 @media (max-width: 767px) {
   body {
@@ -274,6 +275,10 @@ input:focus,button:focus{
   box-shadow: 0 2px 7px rgba(0, 0, 0, .2);
   color: #373737;
 }
+.main-bg-default{
+  background: #fff;
+  padding: 10px 0;
+}
 .nav-list{
   font-weight: 600 !important;
   font-size: 1.1rem !important;
@@ -314,6 +319,10 @@ input:focus,button:focus{
 }
 .carousel-big{
   margin-top: -100px !important;
+  height: 656px;
+  background: url(../../../assets/images/resources/kaabah_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 1390px 768px;
 }
 .small-footer{
   height: 4rem !important;
@@ -368,8 +377,12 @@ input:focus,button:focus{
 }
 .w-100{
   width: 100% !important;
-  height: 720px !important;
+  /*height: 720px !important;*/
+  image-rendering: auto  !important;
+/*  image-rendering: crisp-edges;
+  image-rendering: pixelated;*/
 }
+
 .skyblue {
     background-color: #22c8ff;
 }
